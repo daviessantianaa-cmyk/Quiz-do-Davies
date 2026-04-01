@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Sofisticado - Sobre Mim</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Mini Lobos Decorativos -->
+    <div class="wolf-decoration wolf-1">🐺</div>
+    <div class="wolf-decoration wolf-2">🐺</div>
+    <div class="wolf-decoration wolf-3">🐺</div>
+    <div class="wolf-decoration wolf-4">🐺</div>
+    <div class="wolf-decoration wolf-5">🐺</div>
+    <div class="wolf-decoration wolf-6">🐺</div>
+    <div class="wolf-decoration wolf-6">🐺</div>
+    <div class="wolf-decoration wolf-6">🐺</div>
+    <div class="wolf-decoration wolf-6">🐺</div>
+    <div class="wolf-decoration wolf-6">🐺</div>
+    <div class="wolf-decoration wolf-6">🐺</div>
+    <div class="container">
+        <header>
+            <h1>Quiz Interativo</h1>
+            <p class="subtitle">Teste seus conhecimentos sobre mim!</p>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="questionCounter">1 / 10</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="questions-wrapper" id="questionsWrapper">
+            <!-- Questões serão inseridas aqui by JavaScript -->
+        </div>
+
+        <div class="result-container" id="resultContainer">
+            <div class="score-circle">
+                <div>
+                    <div class="score-text" id="finalScore">-</div>
+                    <div class="score-label">/ 10</div>
+                </div>
+            </div>
+            <div class="stars" id="starsContainer"></div>
+            <div class="result-message" id="resultMessage"></div>
+            <div class="result-description" id="resultDescription"></div>
+            <button class="btn-restart" onclick="restartQuiz()">Começar Novamente</button>
+        </div>
+
+        <div class="button-group" id="buttonGroup">
+            <button class="btn-prev" id="prevBtn" onclick="previousQuestion()" style="display: none;">← Anterior</button>
+            <button class="btn-next" id="nextBtn" onclick="nextQuestion()" disabled>Próxima →</button>
+        </div>
+
+        <footer>
+            <p>Divirta-se e descubra quanto você realmente sabe sobre mim!</p>
+        </footer>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
